@@ -72,48 +72,129 @@
         </button>
     </div>
     <div class="p-3 mb-2 bg-secondary text-light">
+        <br><br>
         <div class="teks">
             <h4><center>Klinik Kesehatan Dharma Sekawan</center></h4>
             <h1><center>Pelayanan</center></h1>
             <h3><center>Poliklinik</center></h3>
-            <h5><center>Silakan Klik Poliklinik yang Dipilih!</center></h5>
+            <h5><center>Silakan Klik Poliklinik yang Akan Dipilih!</center></h5>
+    </div>
+    <br><br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="card text-center mb-3" style="width: 15.65rem;">
+            <div class="card-body">
+              <h5 class="card-title">Poliklinik</h5>
+              <img class="img-thumbnail" src="{{ Vite::asset('resources/images/gigi.jpg') }}" alt="image">
+              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+            </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 15.65rem;">
+            <div class="card-body">
+              <h5 class="card-title">Poliklinik</h5>
+              <img class="img-thumbnail" src="{{ Vite::asset('resources/images/mata.jpg') }}" alt="image">
+              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+            </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 15.65rem;">
+            <div class="card-body">
+              <h5 class="card-title">Poliklinik</h5>
+              <img class="img-thumbnail" src="{{ Vite::asset('resources/images/umum.jpg') }}" alt="image">
+              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+            </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 15.75rem;">
+            <div class="card-body">
+              <h5 class="card-title">Poliklinik</h5>
+              <img class="img-thumbnail" src="{{ Vite::asset('resources/images/jantung.jpg') }}" alt="image">
+              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+            </div>
+        </div>
+        <div class="card text-center mb-3" style="width: 15.75rem;">
+            <div class="card-body">
+              <h5 class="card-title">Poliklinik</h5>
+              <img class="img-thumbnail" src="{{ Vite::asset('resources/images/anak.jpg') }}" alt="image">
+              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Footer -->
+    {{-- <footer id="footer" class="py-5">
+        <div class="container">
+            <div class="row  py-lg-5">
+                <div class="col-lg-3 col-sm-6 footer-logo">
+                    <h5>about us</h5>
+                    <h2>
+                        <a href="index.html">
+                            Precedence
+                            <span>improving lives</span>
+                        </a>
+                    </h2>
+                    <p class="mt-3">Nulla quis lorem ut libermalesuada ultrices posuere cubilia feugiatrice praesent sapien massa</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-angle-double-right"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll">
+                                <i class="fa fa-angle-double-right"></i>About</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll">
+                                <i class="fa fa-angle-double-right"></i>Services</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="scroll">
+                                <i class="fa fa-angle-double-right"></i>Articles</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scroll">
+                                <i class="fa fa-angle-double-right"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer_grid1 mt-lg-0 mt-4">
+                    <h5>Address</h5>
+                    {{-- <div class="fv3-contact">
+                        {!! $alamat->alamat !!}
+                    </div> --}}
+                {{-- </div>
+            </div>
+        </div>
+    </footer>
+    <div class="cpy-right text-center py-4">
+        <p>© 2018 Precedence. All rights reserved | Design by
+            <a href="http://w3layouts.com"> W3layouts.</a>
+        </p>
+    </div>
+</div> --}}
+<!-- /Footer -->
+
+    <div class="p-3 mb-2 bg-light text-dark">
+    <div class="container">
+        <div class="row divide"style="margin-bottom: 0px; margin-top: 10px;">
+<!--logo and copyright-->
+            <p align="center">
+            2023 © <a href="https://ittelkom-sby.ac.id/" target="_blank"> Dharma Sekawan</a>
+            by <a href="https://ittelkom-sby.ac.id/">Kelompok 3</a> |
+                <a href="https://ittelkom-sby.ac.id/" target="_blank"> Follow Us</a> |
+                Build with <a href="http://laravel.com" target="_blank"> Laravel </a> |
+                Publication on <a href="https://github.com/ranggarh/DharmaSekawan_Laravel-FP/tree/main" target="_blank">Github</a>
+                <br/>
+                    <a href="https://www.instagram.com/"><i class="fa fa-angle-double-right">Instagram</a> |
+                    <a href="https://twitter.com/">Twitter</a> |
+                    <a href="https://ittelkom-sby.ac.id/">Website</a> |
+                    <a href="https://www.whatsapp.com/">WhatsApp</a>
+            </p>
+        </div>
+    </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-        <div class="card h-100">
-            <img class="img-thumbnail" src="{{ Vite::asset('resources/images/gigi.jpg') }}" alt="image">
-            <div class="card-body">
-            <h5 class="card-title">Poli Gigi</h5>
-            </div>
-            <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        </div>
-        <div class="col">
-        <div class="card h-100">
-            <img class="img-thumbnail" src="{{ Vite::asset('resources/images/mata.jpg') }}" alt="image">
-            <div class="card-body">
-            <h5 class="card-title">Poli Mata</h5>
-            </div>
-            <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        </div>
-        <div class="col">
-        <div class="card h-100">
-            <img class="img-thumbnail" src="{{ Vite::asset('resources/images/umum.jpg') }}" alt="image">
-            <div class="card-body">
-            <h5 class="card-title">Poli Umum</h5>
-            </div>
-            <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        </div>
-    </div>
     @vite('resources/js/app.js')
 </body>
 </html>
