@@ -16,7 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::get('/form', function () {
     return view('formulir');
+=======
+Route::get('/home', function () {
+    return view('home');
+>>>>>>> 80003140a4a0ba43b8a56f6fe7fef988f67a41f0
 });
