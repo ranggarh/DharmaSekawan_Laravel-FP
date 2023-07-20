@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 .formulir .row{
-    display: flex;
     align-items: center;
     border-radius: 10px;
 }
@@ -9,8 +7,8 @@
 } */
 
 .formulir .row .images img{
-    width: 75%;
-    border-radius: 5px;
+    width: 400px;
+    border-radius: 20px;
 }
 .formulir .row .content{
     flex:25rem;
@@ -41,9 +39,8 @@ input, textarea
 .link{
     color: white;
 }
-.warna5 {
-    background-color: #3875fa;
-}.send{
+
+.send{
     width: 100%;
     background-color: rgb(66, 109, 236);
     color: white;
@@ -54,14 +51,20 @@ input, textarea
 }
 
 .send:hover{
-    transform: scale(0.9);
+    transform: scale(0.6);
 }
 
 
-=======
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 
 .teks{
     font-family: 'Poppins';
 }
->>>>>>> 80003140a4a0ba43b8a56f6fe7fef988f67a41f0
+/*
+.dokter{
+    margin: 120px;
+} */
+
+.card {
+    width: 300px;
+}

@@ -40,9 +40,9 @@
                         <a class="nav-link" href="#">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <form class="container-fluid justify-content-start">
-                        <button class="btn btn-primary" type="button" href="#">Pendaftaran</button>
-                        </form>
+
+                        <button class="btn btn-primary me-3 ms-2" type="button" href="#">Pendaftaran</button>
+
                     </li>
                 </ul>
 
@@ -81,7 +81,7 @@
     </div>
     <br><br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card text-center mb-3" style="width: 15.65rem;">
+        <div class="card text-center mb-3 style="width: 15.65rem;">
             <div class="card-body">
               <h5 class="card-title">Poliklinik</h5>
               <img class="img-thumbnail" src="{{ Vite::asset('resources/images/gigi.jpg') }}" alt="image">
