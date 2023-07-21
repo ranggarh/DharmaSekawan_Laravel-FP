@@ -3,3 +3,17 @@
 .teks{
     font-family: 'Poppins';
 }
+
+.foot{
+    background-color: #1A2238;
+    padding: 100;
+}
+
+.tekstentang p{
+    font-family: serif;
+    font-size: 14px;
+}
+
+.tekstentang{
+    font-family: serif;
+}

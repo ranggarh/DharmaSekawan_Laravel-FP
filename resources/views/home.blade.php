@@ -4,7 +4,7 @@
 
      <title>apa aja dlu</title>
      <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     {{-- <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
      <meta name="keywords" content="">
      <meta name="author" content="style">
@@ -18,20 +18,26 @@
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" type="text/css" href="{!! asset('css/style.css') !!}">
-     @vite('resources/sass/app.scss')
+     @vite('resources/sass/app.scss') --}}
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dharma Sekawan</title>
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    @vite('resources/sass/app.scss')
 </head>
 <body>
     <!-- As a heading -->
     <div class="p-3 bg-primary text-white">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1"><center>Selamat Datang di Situs Resmi Pendaftaran Pasien Online Klinik Dharma Sekawan</center></span>
+            <span class="tekstentang navbar-brand mb-0 h1"><center>Selamat Datang di Situs Resmi Pendaftaran Pasien Online Klinik Dharma Sekawan</center></span>
         </div>
     </div>
 
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <nav class="tekstentang navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
+            <img class="img-fluid" style="width: 55px;" src="{{ Vite::asset('resources/images/logo.png') }}" alt="image">
             <a class="navbar-brand" href="#">Klinik Dharma Sekawan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,12 +60,9 @@
                         <a class="nav-link" href="#">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <form class="container-fluid justify-content-start">
-                        <button class="btn btn-primary" type="button" href="#">Pendaftaran</button>
-                        </form>
+                        <button class="btn btn-primary me-3 ms-2" type="button" href="#">Pendaftaran</button>
                     </li>
                 </ul>
-
           </div>
         </div>
     </nav>
@@ -85,130 +88,108 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div class="p-3 mb-2 bg-secondary text-light">
+    <div class="mb-2 bg-light text-dark">
         <br><br>
         <div class="teks">
-            <h4><center>Klinik Kesehatan Dharma Sekawan</center></h4>
-            <h1><center>Pelayanan</center></h1>
-            <h3><center>Poliklinik</center></h3>
-            <h5><center>Silakan Klik Poliklinik yang Akan Dipilih!</center></h5>
+            <h4 style="font-weight: bold"><center>Klinik Kesehatan Dharma Sekawan</center></h4>
+            <h1 style="font-weight: bold"><center>Pelayanan</center></h1>
+            <h3 style="font-weight: bold"><center>Poliklinik</center></h3>
+            <h5 style="font-weight: bold"><center>Silakan Klik Poliklinik yang Akan Dipilih!</center></h5>
     </div>
     <br><br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card text-center mb-3" style="width: 15.65rem;">
+    <div class="row row-cols-1 row-cols-md-3 g-4 ms-5">
+        <div class="card text-center mb-3 bg-primary" style="width: 14rem;">
             <div class="card-body">
-              <h5 class="card-title">Poliklinik</h5>
+              <h5 class="card-title text-light">Poliklinik</h5>
               <img class="img-thumbnail" src="{{ Vite::asset('resources/images/gigi.jpg') }}" alt="image">
-              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+              <a href="#" class="btn btn-primary mt-4" style="width: 10rem;">Selengkapnya</a>
             </div>
         </div>
-        <div class="card text-center mb-3" style="width: 15.65rem;">
+        <div class="card text-center mb-3 ms-3 bg-primary" style="width: 14rem;">
             <div class="card-body">
-              <h5 class="card-title">Poliklinik</h5>
+              <h5 class="card-title text-light">Poliklinik</h5>
               <img class="img-thumbnail" src="{{ Vite::asset('resources/images/mata.jpg') }}" alt="image">
-              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+              <a href="#" class="btn btn-primary mt-4" style="width: 10rem;">Selengkapnya</a>
             </div>
         </div>
-        <div class="card text-center mb-3" style="width: 15.65rem;">
+        <div class="card text-center mb-3 ms-3 bg-primary" style="width: 14rem;">
             <div class="card-body">
-              <h5 class="card-title">Poliklinik</h5>
+              <h5 class="card-title text-light">Poliklinik</h5>
               <img class="img-thumbnail" src="{{ Vite::asset('resources/images/umum.jpg') }}" alt="image">
-              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+              <a href="#" class="btn btn-primary mt-4" style="width: 10rem;">Selengkapnya</a>
             </div>
         </div>
-        <div class="card text-center mb-3" style="width: 15.75rem;">
+        <div class="card text-center mb-3 ms-3 bg-primary" style="width: 14rem;">
             <div class="card-body">
-              <h5 class="card-title">Poliklinik</h5>
+              <h5 class="card-title text-light">Poliklinik</h5>
               <img class="img-thumbnail" src="{{ Vite::asset('resources/images/jantung.jpg') }}" alt="image">
-              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+              <a href="#" class="btn btn-primary mt-4" style="width: 10rem;">Selengkapnya</a>
             </div>
         </div>
-        <div class="card text-center mb-3" style="width: 15.75rem;">
+        <div class="card text-center mb-3 ms-3 bg-primary" style="width: 14em;">
             <div class="card-body">
-              <h5 class="card-title">Poliklinik</h5>
+              <h5 class="card-title text-light">Poliklinik</h5>
               <img class="img-thumbnail" src="{{ Vite::asset('resources/images/anak.jpg') }}" alt="image">
-              <a href="#" class="btn btn-primary" style="width: 11.5rem;">Selengkapnya</a>
+              <a href="#" class="btn btn-primary mt-4" style="width: 10rem;">Selengkapnya</a>
             </div>
         </div>
     </div>
+
     <br><br>
+    {{-- FOOTER --}}
+        <div class="foot mt-5 text-light"><hr>
+            <div class="py-2" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 mb-5">
+                            <a href="" class="logo text-decoration-none">
+                                <div class="d-flex">
+                                    <img class="img-fluid" style="width: 150px;" src="{{ Vite::asset('resources/images/logo.png') }}" alt="image">
+                                </div>
+                            </a>
+                            <div class="tekstentang mt-2 text-light">
+                                <small>Copyright © 2023 Dharma Sekawan. All rights reserved</small>
+                            </div>
 
-    <!-- Footer -->
-    {{-- <footer id="footer" class="py-5">
-        <div class="container">
-            <div class="row  py-lg-5">
-                <div class="col-lg-3 col-sm-6 footer-logo">
-                    <h5>about us</h5>
-                    <h2>
-                        <a href="index.html">
-                            Precedence
-                            <span>improving lives</span>
-                        </a>
-                    </h2>
-                    <p class="mt-3">Nulla quis lorem ut libermalesuada ultrices posuere cubilia feugiatrice praesent sapien massa</p>
+                        </div>
+                        <div class="tekstentang col-6 col-lg-2 offset-lg-1 mb-5 ms-5">
+                            <h5>Tautan Penting</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="">Beranda</a></li>
+                                <li class="mb-2"><a href="">Tentang</a></li>
+                                <li class="mb-2"><a href="">Dokter</a></li>
+                                <li class="mb-2"><a href="">Poliklinik</a></li>
+                            </ul>
+                        </div>
+                        <div class="tekstentang col-4 col-lg-3 offset-lg mb-5 ms-0 me-3">
+                            <h5>Kontak Kami</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href=""><i class="bi bi-github me-3" style="size"></i></a>
+                                    <a href=""><i class="bi bi-instagram me-3"></i></a>
+                                    <a href=""><i class="bi bi-whatsapp me-3"></i></a>
+                                    <a href=""><i class="bi bi-telephone me-3"></i></a>
+                                    <a href=""><i class="bi bi-envelope me-3"></i></a>
+                                </li>
+                            </ul>
+                            <p>Jl. Ketintang No.156, Gayungan, Surabaya, Jawa Timur 60231</p>
+                        </div>
+                        <div class="tekstentang col-4 col-lg-3 offset-lg-1 mb-5 ms-4">
+                            <h5>Jam Operasional</h5>
+                            <ul class="list-unstyled">
+                                <li>1. Senin - Kamis (08.00 - 16.00)</li>
+                                <li>2. Jumat (08.00 - 14.00)</li>
+                                <li>3. Sabtu, Minggu, Hari Besar (Libur)</li>
+                            </ul>
+                        </div>
+                        <section id="google-map">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.385639464917!2d112.7260852738168!3d-7.310500771874553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd1cb925a1d%3A0x1dbecb0b2e9b059f!2sInstitut%20Teknologi%20Telkom%20Surabaya!5e0!3m2!1sen!2sid!4v1689845017537!5m2!1sen!2sid" width="1130" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br><br>
+                        </section>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-                    <h5>Quick links</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-angle-double-right"></i>Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="scroll">
-                                <i class="fa fa-angle-double-right"></i>About</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="scroll">
-                                <i class="fa fa-angle-double-right"></i>Services</a>
-                        </li>
-                        <li>
-                            <a href="#blog" class="scroll">
-                                <i class="fa fa-angle-double-right"></i>Articles</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="scroll">
-                                <i class="fa fa-angle-double-right"></i>Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 footer_grid1 mt-lg-0 mt-4">
-                    <h5>Address</h5>
-                    {{-- <div class="fv3-contact">
-                        {!! $alamat->alamat !!}
-                    </div> --}}
-                {{-- </div>
             </div>
         </div>
-    </footer>
-    <div class="cpy-right text-center py-4">
-        <p>© 2018 Precedence. All rights reserved | Design by
-            <a href="http://w3layouts.com"> W3layouts.</a>
-        </p>
-    </div>
-</div> --}}
-<!-- /Footer -->
-
-    <div class="p-3 mb-2 bg-light text-dark">
-    <div class="container">
-        <div class="row divide"style="margin-bottom: 0px; margin-top: 10px;">
-<!--logo and copyright-->
-            <p align="center">
-            2023 © <a href="https://ittelkom-sby.ac.id/" target="_blank"> Dharma Sekawan</a>
-            by <a href="https://ittelkom-sby.ac.id/">Kelompok 3</a> |
-                <a href="https://ittelkom-sby.ac.id/" target="_blank"> Follow Us</a> |
-                Build with <a href="http://laravel.com" target="_blank"> Laravel </a> |
-                Publication on <a href="https://github.com/ranggarh/DharmaSekawan_Laravel-FP/tree/main" target="_blank">Github</a>
-                <br/>
-                    <a href="https://www.instagram.com/"><i class="fa fa-angle-double-right">Instagram</a> |
-                    <a href="https://twitter.com/">Twitter</a> |
-                    <a href="https://ittelkom-sby.ac.id/">Website</a> |
-                    <a href="https://www.whatsapp.com/">WhatsApp</a>
-            </p>
-        </div>
-    </div>
-    </div>
-
+    {{-- END FOOTER --}}
     @vite('resources/js/app.js')
 </body>
 </html>

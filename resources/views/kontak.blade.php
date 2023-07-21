@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav d-flex flex-row flex-wrap ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                        <a class="nav-link" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Tentang</a>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#">Poliklinik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a class="nav-link active" aria-current="page" href="#">Kontak</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-primary me-3 ms-2" type="button" href="#">Pendaftaran</button>
