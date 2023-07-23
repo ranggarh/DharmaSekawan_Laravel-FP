@@ -20,7 +20,22 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-
+Route::get('/poliklinik', function () {
+    return view('poliklinik');
+});
+Route::get('/kontak', function () {
+    return view('kontak');
+});
 Route::get('/tentang', function () {
     return view('tentang');
+});
+Route::get('/form', function () {
+    return view('formulir');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/dokter', function () {
+    return view('dokter');
 });

@@ -7,3 +7,22 @@
 // // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* mengatur warna backgroud dan padding pada tag body bagian atas agar form tidak menempel diatas */
+
+
+/* mengatur warna backgroud form */
+
+/* mengatur border dan padding class form-container */
+.formulir .row{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* .about .row .images{
+} */
+
+
+
+
