@@ -72,9 +72,7 @@
         <div class="teks">
             <h2 style="font-weight: bold"><center>Klinik Kesehatan Dharma Sekawan</center></h2>
             <br>
-            <h3 style="font-weight: bold"><center>Sarana</center></h3>
-            <h1 style="font-weight: bold"><center>&</center></h1>
-            <h4 style="font-weight: bold"><center>Prasarana</center></h4>
+            <h3 style="font-weight: bold"><center>Sarana & Prasarana</center></h3>
             <br>
     </div>
 

@@ -29,3 +29,13 @@ Route::get('/kontak', function () {
 Route::get('/tentang', function () {
     return view('tentang');
 });
+Route::get('/form', function () {
+    return view('formulir');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/dokter', function () {
+    return view('dokter');
+});

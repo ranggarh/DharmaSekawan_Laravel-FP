@@ -7,6 +7,7 @@
     <title>Kontak</title>
     <link rel="stylesheet" type="text/css" href=style.css>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     @vite('resources/sass/app.scss')
 </head>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
@@ -47,9 +48,8 @@
     </section>
     <br>
 
-    <section class="contact"></section>
-            <h2><center>Kontak Info</center></h2>
-        </div>
+    <section class="contact bg-body-tertiary">
+        <h2><center>Kontak Info</center></h2>
         <div class="container">
             <div class="kontakinfo">
                 <div class="box">
@@ -63,35 +63,23 @@
                     <div class="icon"></div>
                     <div class="text"></div>
                     <h3><i class="bi bi-telephone-fill me-3"></i>Telepon</i></h3>
-                        <p>081912345</p>
+                        <p>08191234552</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="icon"></div>
                     <div class="text"></div>
-                    <h3><i class="bi bi-envelope-heart-fill me-3 ms-5"></i>Email</i></h3>
-                        <p>dharmasekawan@gmail.com</p>
+                    <h3 class="ms-4"><i class="bi bi-envelope-heart-fill ms-5 me-3"></i>Email</i></h3>
+                        <div class="ms-4">
+                            <p class="ms-5">Dharmasekawan@gmail.com</p>
+                        </div>
                     </div>
-
-
-
-
+                </div>
+            </div>
+        </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="foot mt-5"><hr>
+    <div class="foot mt-5 text-light"><hr>
         <div class="py-2" id="footer">
             <div class="container">
                 <div class="row">
@@ -101,12 +89,12 @@
                                 <img class="img-fluid" style="width: 150px;" src="{{ Vite::asset('resources/images/logo.png') }}" alt="image">
                             </div>
                         </a>
-                        <div class="mt-2 text-muted">
+                        <div class="tekstentang mt-2 text-light">
                             <small>Copyright © 2023 Dharma Sekawan. All rights reserved</small>
                         </div>
 
                     </div>
-                    <div class="col-6 col-lg-2 offset-lg-1 mb-5 ms-5">
+                    <div class="tekstentang col-6 col-lg-2 offset-lg-1 mb-5 ms-5">
                         <h5>Tautan Penting</h5>
                         <ul class="list-unstyled">
                             <li class="mb-2"><a href="">Beranda</a></li>
@@ -115,7 +103,7 @@
                             <li class="mb-2"><a href="">Poliklinik</a></li>
                         </ul>
                     </div>
-                    <div class="col-4 col-lg-3 offset-lg mb-5 ms-0 me-3">
+                    <div class="tekstentang col-4 col-lg-3 offset-lg mb-5 ms-0 me-3">
                         <h5>Kontak Kami</h5>
                         <ul class="list-unstyled">
                             <li class="mb-2">
@@ -128,7 +116,7 @@
                         </ul>
                         <p>Jl. Ketintang No.156, Gayungan, Surabaya, Jawa Timur 60231</p>
                     </div>
-                    <div class="col-4 col-lg-3 offset-lg-1 mb-5 ms-4">
+                    <div class="tekstentang col-4 col-lg-3 offset-lg-1 mb-5 ms-4">
                         <h5>Jam Operasional</h5>
                         <ul class="list-unstyled">
                             <li>1. Senin - Kamis (08.00 - 16.00)</li>
@@ -136,5 +124,10 @@
                             <li>3. Sabtu, Minggu, Hari Besar (Libur)</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @vite('resources/js/app.js')
 </body>
 </html>
