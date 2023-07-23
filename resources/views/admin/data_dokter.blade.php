@@ -8,7 +8,7 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     @vite('resources/sass/app.scss')
 
-	<title>AdminHub</title>
+	<title>{{$pageTitle}}</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
                 <i class='bx bxs-smile'></i>
                 <span class="text">Administrator</span>
             </a>
-			<li class="">
+			<li>
 				<a href="#">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
@@ -41,7 +41,7 @@
 				</a>
 			</li>
             <li>
-				<a href="{{route('data_dokter.index')}}">
+				<a href="#">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Data Dokter</span>
 				</a>
@@ -110,68 +110,48 @@
 
 		<!-- MAIN -->
 		<main>
-			<div class="head-title">
-				<div class="left">
-					<h1>Welcome to Our Admin Page</h1>
+			<div class="container mt-4">
+                <div class="row mb-0">
+                    <div class="col-lg-9 col-xl-10">
+                        <h4 class="mb-3">{{ $pageTitle }}</h4>
+                    </div>
+                    <div class="col-lg-3 col-xl-2">
+                        <div class="d-grid gap-2">
+                            <a href="" class="btn btn-primary">Create Employee</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="table-responsive border p-3 rounded-3">
+                    <table class="table table-bordered table-hover table-striped mb-0 bg-white">
+                        <thead>
+                            <tr>
 
-				</div>
-			</div>
+                                <th>Nama Dokter</th>
+                                <th>No. Handphone</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Spesialis</th>
 
-			<ul class="box-info">
-				<li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>1020</h3>
-						<p>Data Pasien</p>
-                        <button class="btn btn-primary text-white">Selengkapnya</button>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-group' ></i>
-					<span class="text">
-						<h3>2834</h3>
-						<p>Data Perawatan</p>
-                        <button class="btn btn-primary text-white">Selengkapnya</button>
-					</span>
-				</li>
-				<li>
-					<i class='bx bxs-dollar-circle' ></i>
-					<span class="text">
-						<h3>$2543</h3>
-						<p>Data Dokter</p>
-                        <button class="btn btn-primary text-white">Selengkapnya</button>
-					</span>
-				</li>
-                <li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>1020</h3>
-						<p>Data Pasien</p>
-                        <button class="btn btn-primary text-white">Selengkapnya</button>
-					</span>
-				</li>
-                <li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>1020</h3>
-						<p>Data Pasien</p>
-                        <button class="btn btn-primary text-white">Selengkapnya</button>
-					</span>
-				</li>
-                <li>
-					<i class='bx bxs-calendar-check' ></i>
-					<span class="text">
-						<h3>1020</h3>
-						<p>Data Pasien</p>
-                        <button class="btn btn-primary text-white">Selengkapnya</button>
-					</span>
-				</li>
-
-			</ul>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($dokters as $dokter)
+                                <tr>
+                                    <td>{{ $dokter->name }}</td>
+                                    <td>{{ $dokter->phone }}</td>
+                                    <td>{{ $dokter->gender }}</td>
+                                    <td>{{ $dokter->specialist->name}}</td>
+                                </tr>'
+                            @endforeach
+                        </tbody>
+                </table>
+            </div>
+        </div>
 		</main>
 		<!-- MAIN -->
 	</section>
 	<!-- CONTENT -->
+
 
 
 </body>

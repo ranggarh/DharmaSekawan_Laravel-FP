@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DokterController;
 use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/login', [LoginController::class, 'authenticate']);
+Route::resource('/data_dokter', DokterController::class);
