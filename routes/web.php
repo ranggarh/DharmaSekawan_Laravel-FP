@@ -28,3 +28,26 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::resource('/data_dokter', DokterController::class);
+
+Route::get('/beranda', function () {
+    return view('beranda');
+});
+Route::get('/poliklinik', function () {
+    return view('poliklinik');
+});
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+Route::get('/form', function () {
+    return view('formulir');
+});
+Route::get('/beranda', function () {
+    return view('beranda');
+});
+
+Route::get('/dokter', function () {
+    return view('dokter');
+});

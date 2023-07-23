@@ -1,0 +1,84 @@
+.formulir .row{
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* .about .row .images{
+} */
+
+.formulir .row .images img{
+    width: 400px;
+    border-radius: 20px;
+}
+.formulir .row .content{
+    flex:25rem;
+}
+
+.formulir .row .content p{
+    color: #394c71;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+form
+{
+    padding: 40px;
+    background: #f0f0f4;
+    border-radius: 20px;
+}
+
+input, textarea
+{
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.link{
+    color: white;
+}
+
+.send{
+    width: 100%;
+    background-color: rgb(66, 109, 236);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.send:hover{
+    transform: scale(0.6);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+.teks{
+    font-family: 'Poppins';
+}
+
+.foot{
+    background-color: #1A2238;
+    padding: 100;
+}
+
+.tekstentang p{
+    font-family: serif;
+    font-size: 14px;
+}
+
+.tekstentang{
+    font-family: serif;
+}
+/*
+.dokter{
+    margin: 120px;
+} */
+
+/* .card {
+    width: 300px;
+} */
