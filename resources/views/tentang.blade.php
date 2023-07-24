@@ -181,29 +181,29 @@
 
                     </div>
                     <div class="tekstentang col-6 col-lg-2 offset-lg-1 mb-5 ms-5">
-                        <h5>Tautan Penting</h5>
+                        <h5 class="text-info">Tautan Penting</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="">Beranda</a></li>
-                            <li class="mb-2"><a href="">Tentang</a></li>
-                            <li class="mb-2"><a href="">Dokter</a></li>
-                            <li class="mb-2"><a href="">Poliklinik</a></li>
+                            <li class="mb-2"><a class="text-light" href="{{route("beranda.index")}}">Beranda</a></li>
+                            <li class="mb-2"><a class="text-light" href="{{route("tentang")}}">Tentang</a></li>
+                            <li class="mb-2"><a class="text-light" href="{{route("dokter")}}">Dokter</a></li>
+                            <li class="mb-2"><a class="text-light" href="{{route("poliklinik")}}">Poliklinik</a></li>
                         </ul>
                     </div>
                     <div class="tekstentang col-4 col-lg-3 offset-lg mb-5 ms-0 me-3">
-                        <h5>Kontak Kami</h5>
+                        <h5 class="text-info">Kontak Kami</h5>
                         <ul class="list-unstyled">
                             <li class="mb-2">
-                                <a href=""><i class="bi bi-github me-3" style="size"></i></a>
-                                <a href=""><i class="bi bi-instagram me-3"></i></a>
-                                <a href=""><i class="bi bi-whatsapp me-3"></i></a>
-                                <a href=""><i class="bi bi-telephone me-3"></i></a>
-                                <a href=""><i class="bi bi-envelope me-3"></i></a>
+                                <a href="https://github.com/"><i class="bi bi-github me-3 text-light" style="size"></i></a>
+                                <a href="https://www.instagram.com/"><i class="bi bi-instagram me-3 text-light"></i></a>
+                                <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp me-3 text-light"></i></a>
+                                <a href="https://www.telkomsel.com/"><i class="bi bi-telephone me-3 text-light"></i></a>
+                                <a href="https://mail.google.com/"><i class="bi bi-envelope me-3 text-light"></i></a>
                             </li>
                         </ul>
                         <p>Jl. Ketintang No.156, Gayungan, Surabaya, Jawa Timur 60231</p>
                     </div>
                     <div class="tekstentang col-4 col-lg-3 offset-lg-1 mb-5 ms-4">
-                        <h5>Jam Operasional</h5>
+                        <h5 class="text-info">Jam Operasional</h5>
                         <ul class="list-unstyled">
                             <li>1. Senin - Kamis (08.00 - 16.00)</li>
                             <li>2. Jumat (08.00 - 14.00)</li>
