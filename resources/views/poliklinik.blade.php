@@ -4,42 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poliklinik</title>
+    <title>{{$pageTitle}}</title>
     @vite('resources/sass/app.scss')
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img class="img-fluid" style="width: 55px;" src="{{ Vite::asset('resources/images/logo.png') }}" alt="image">
-            <a class="navbar-brand" href="#">Klinik Dharma Sekawan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex flex-row flex-wrap ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dokter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Poliklinik</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary me-3 ms-2" type="button" href="#">Pendaftaran</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    @include('layouts.nav')
     <div></div>
     <div class="row row-cols-1 row-cols-md-3 g-4 ms-5">
         <div class="card text-center mb-3 ms-4 bg-primary" style="width: 23rem;">
