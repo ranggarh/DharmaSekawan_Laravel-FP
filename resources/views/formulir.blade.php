@@ -49,13 +49,6 @@
     </nav>
     <div class="text-center py-5">
         {{-- <h3 class="h3">Formulir Pendaftaran</h3> --}}
-        <section class="formulir">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card  ms-3 text-center">
-                        <img  class="img-thumbnail" src="/images/logo.jpg">
-                    </div>
-                </div>
                 {{-- <div class="images mt-7 mb-9">
                     <img style="border-color:black;" src="/images/foto1.jpeg" alt="">
                 </div> --}}
@@ -118,7 +111,6 @@
                     </section>
                 </div>
             </div>
-        </section>
     </div>
     </section>
 </html>
