@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Specialist;
 
 class BerandaController extends Controller
 {
@@ -22,11 +23,12 @@ class BerandaController extends Controller
     {
         $pageTitle = "Halaman Form Daftar Online | Klinik Dharma Sekawan";
 
-        return view('formulir',['pageTitle'=> $pageTitle]);
+        // return view('formulir',['pageTitle'=> $pageTitle]);
 
         // ELOQUENT
         $specialists = Specialist::all();
-        return view('admin.data_pasien', compact('pageTitle', 'specialists'));
+        return view('formulir', compact('pageTitle', 'specialists'));
+
     }
 
     /**

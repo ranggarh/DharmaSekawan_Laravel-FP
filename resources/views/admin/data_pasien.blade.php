@@ -63,7 +63,6 @@
 	<!-- SIDEBAR -->
 
 
-
 	<!-- CONTENT -->
 	<section id="content">
 		<!-- NAVBAR -->
@@ -73,15 +72,19 @@
             <ul class="navbar-nav ms-auto">
             @guest
                     @if (Route::has('login'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                        </li>
+                        <ul class="nav nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                        </ul>
                     @endif
 
                     @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
+                        <ul class="nav nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li>
+                        </ul>
                     @endif
                 @else
                     <li class="nav-item dropdown">
@@ -113,7 +116,7 @@
 			<div class="container mt-4">
                 <div class="row mb-0">
                     <div class="col-lg-9 col-xl-10">
-                        <h4 class="mb-3">{{ $pageTitle }}</h4>
+                        <h4 class="mt-4">{{ $pageTitle }}</h4>
                     </div>
                     <div class="col-lg-3 col-xl-2">
                         <div class="d-grid gap-2">
@@ -125,23 +128,31 @@
                 <div class="table-responsive border p-3 rounded-3">
                     <table class="table table-bordered table-hover table-striped mb-0 bg-white">
                         <thead>
-                            <tr>
-
-                                <th>Nama Dokter</th>
-                                <th>No. Handphone</th>
-                                <th>Jenis Kelamin</th>
-                                <th>Spesialis</th>
-
+                            <tr style="text-align: center">
+                                <th>Nama</th>
+                                <th>NIK</th>
+                                <th>Email</th>
+                                <th>TTL</th>
+                                <th>Alamat</th>
+                                <th>Telp</th>
+                                <th>Poli</th>
+                                <th>Keluhan</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($dokters as $dokter)
+                            @foreach ($patients as $patient)
                                 <tr>
-                                    <td>{{ $dokter->name }}</td>
-                                    <td>{{ $dokter->phone }}</td>
-                                    <td>{{ $dokter->gender }}</td>
-                                    <td>{{ $dokter->specialist->name}}</td>
-                                </tr>'
+                                    <td>{{ $patient->fullname }}</td>
+                                    <td>{{ $patient->nik }}</td>
+                                    <td>{{ $patient->email }}</td>
+                                    <td>{{ $patient->ttl }}</td>
+                                    <td>{{ $patient->alamat }}</td>
+                                    <td>{{ $patient->telp }}</td>
+                                    <td>{{ $patient->specialist->name}}</td>
+                                    <td>{{ $patient->keluhan }}</td>
+
+                                </tr>
                             @endforeach
                         </tbody>
                 </table>

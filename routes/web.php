@@ -49,6 +49,9 @@ Route::get('/dokterkami', DoktorController::class)->name('dokter');
 
 Route::get('/kontak', KontakController::class)->name('kontak');
 
+Route::resource('data_pasien', AdminController::class);
+
+
 // Route::resource('/pendaftaran', BerandaController::class, 'create');
 
 
