@@ -5,6 +5,15 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DokterController;
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\TentangController;
+use App\Http\Controllers\PoliklinikController;
+use App\Http\Controllers\DoktorController;
+use App\Http\Controllers\KontakController;
+
+
+
+
 use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
@@ -29,25 +38,19 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::resource('/data_dokter', DokterController::class);
 
-Route::get('/beranda', function () {
-    return view('beranda');
-});
-Route::get('/poliklinik', function () {
-    return view('poliklinik');
-});
-Route::get('/kontak', function () {
-    return view('kontak');
-});
-Route::get('/tentang', function () {
-    return view('tentang');
-});
-Route::get('/form', function () {
-    return view('formulir');
-});
-Route::get('/beranda', function () {
-    return view('beranda');
-});
+//Route View
+Route::resource('/beranda', BerandaController::class);
 
-Route::get('/dokter', function () {
-    return view('dokter');
-});
+Route::get('/tentangkami', TentangController::class)->name('tentang');
+
+Route::get('/poliklinik', PoliklinikController::class)->name('poliklinik');
+
+Route::get('/dokterkami', DoktorController::class)->name('dokter');
+
+Route::get('/kontak', KontakController::class)->name('kontak');
+
+// Route::resource('/pendaftaran', BerandaController::class, 'create');
+
+
+
+
