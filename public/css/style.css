@@ -23,7 +23,7 @@
 form
 {
     padding: 40px;
-    background: #dcdcde;
+    background: #f0f0f4;
     border-radius: 20px;
 }
 
@@ -60,11 +60,25 @@ input, textarea
 .teks{
     font-family: 'Poppins';
 }
+
+.foot{
+    background-color: #1A2238;
+    padding: 100;
+}
+
+.tekstentang p{
+    font-family: serif;
+    font-size: 14px;
+}
+
+.tekstentang{
+    font-family: serif;
+}
 /*
 .dokter{
     margin: 120px;
 } */
 
-.card {
+/* .card {
     width: 300px;
-}
+} */
