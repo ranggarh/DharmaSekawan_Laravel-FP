@@ -28,7 +28,6 @@ class BerandaController extends Controller
         // ELOQUENT
         $specialists = Specialist::all();
         return view('formulir', compact('pageTitle', 'specialists'));
-
     }
 
     /**
