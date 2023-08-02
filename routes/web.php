@@ -54,6 +54,8 @@ Route::resource('data_pasien', AdminController::class);
 
 // Route::resource('/pendaftaran', BerandaController::class, 'create');
 
-
+Route::get('/antrian', function () {
+    return view('antrian');
+});
 
 

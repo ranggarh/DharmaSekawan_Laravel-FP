@@ -20,6 +20,9 @@
                     <a class="nav-link active" href="{{route('poliklinik')}}">Poliklinik</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link active" href="">Antrian</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('kontak')}}">Kontak</a>
                 </li>
                 <li class="nav-item">
