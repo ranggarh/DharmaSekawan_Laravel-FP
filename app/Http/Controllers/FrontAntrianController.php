@@ -20,7 +20,7 @@ class FrontAntrianController extends Controller
      */
     public function index()
     {
-        return view('fiturUtama.antrian.index');
+        return view('antrian.index');
     }
 
     /**

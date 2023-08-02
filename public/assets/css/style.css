@@ -177,7 +177,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  /* top: 40px; */
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 
@@ -186,7 +186,7 @@ h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -234,7 +234,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -267,7 +267,6 @@ h6 {
   color: #2c4964;
   white-space: nowrap;
   transition: 0.3s;
-  border-bottom: 2px solid #fff;
   padding: 5px 2px;
 }
 
@@ -354,7 +353,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #2c4964;
@@ -1639,7 +1638,7 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f1f7fd;
+  background: #1a2238;
 }
 
 #footer .footer-top {

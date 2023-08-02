@@ -23,6 +23,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            DokterSeeder::class,
+            // SpesialisSeeder::class,
+            SpecialistSeeder::class
+        ]);
 
         Antrian::create([
             'no_antrian' => 'U1',

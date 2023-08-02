@@ -1,10 +1,11 @@
 @extends('layouts.main')
 
-@include('partials.navbar')
+@include('layouts.nav')
 
 @section('content')
     <div style="height: 800px">
         <livewire:antrian.show-antrian>
+            @include('layouts.footer')
     </div>
 @endsection
 
@@ -15,8 +16,8 @@
             $('#editAntrian').modal('hide')
             $('#deleteAntrian').modal('hide')
         })
-    
+
     </script>
 @endsection
 
-@include('partials.footer')
+

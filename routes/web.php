@@ -7,6 +7,14 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardLaporanController;
 use App\Http\Controllers\FrontAntrianController;
+use App\Http\Controllers\DokterController;
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\TentangController;
+use App\Http\Controllers\PoliklinikController;
+use App\Http\Controllers\DoktorController;
+use App\Http\Controllers\KontakController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +28,7 @@ use App\Http\Controllers\FrontAntrianController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('beranda');
 });
 
 Route::resource('antrian', FrontAntrianController::class);
@@ -37,3 +45,21 @@ Route::get('dashboard/antrian/poliTht', [DashboardAntrianController::class, 'ind
 
 Route::get('dashboard/laporan/index', [DashboardLaporanController::class, 'index']);
 Route::get('livewire/dashboard/laporan/cetakLaporan', [DashboardLaporanController::class, 'cetakLaporan'])->name('cetakLaporan');
+
+//view
+Route::resource('admin', AdminController::class);
+// Route::post('/login', [LoginController::class, 'authenticate']);
+Route::resource('/data_dokter', DokterController::class);
+
+//Route View
+Route::resource('/beranda', BerandaController::class);
+
+Route::get('/tentangkami', TentangController::class)->name('tentang');
+
+Route::get('/poliklinik', PoliklinikController::class)->name('poliklinik');
+
+Route::get('/dokterkami', DoktorController::class)->name('dokter');
+
+Route::get('/kontak', KontakController::class)->name('kontak');
+
+Route::resource('data_pasien', AdminController::class);
