@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Dokter</title>
-<link rel="stylesheet" type="text/css" href=style.css>
+<title>{{$pageTitle}}</title>
+{{-- <link rel="stylesheet" type="text/css" href=style.css> --}}
+<link href="/assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -20,8 +21,8 @@
     <div class="tekstentang" style="background-color: rgb(115, 169, 220)">
         <div class="dokter">
             <div class="container-fluid">
-                <div class="row mx-auto" style="width: 60rem;">
-                    <div class="card-deck mx-auto mt-5">
+                <div class="row">
+                    <div class="card-deck mx-auto mt-5" style="width: 60rem;">
                         <div class="card">
                             <img src="/images/dokter1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -139,6 +140,7 @@
             </div>
         </div>
     </div>
+    @include('layouts.footer')
     @vite('resources/js/app.js')
 </body>
 </html>

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{$pageTitle}}</title>
-    <link rel="stylesheet" type="text/css" href=style.css>
+    {{-- <link rel="stylesheet" type="text/css" href=style.css> --}}
+    <link href="/assets/css/style.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     @vite('resources/sass/app.scss')
@@ -48,55 +49,7 @@
         </div>
     </section>
 
-    <div class="foot mt-5 text-light"><hr>
-        <div class="py-2" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 mb-5">
-                        <a href="" class="logo text-decoration-none">
-                            <div class="d-flex">
-                                <img class="img-fluid" style="width: 150px;" src="{{ Vite::asset('resources/images/logo.png') }}" alt="image">
-                            </div>
-                        </a>
-                        <div class="tekstentang mt-2 text-light">
-                            <small>Copyright © 2023 Dharma Sekawan. All rights reserved</small>
-                        </div>
-
-                    </div>
-                    <div class="tekstentang col-6 col-lg-2 offset-lg-1 mb-5 ms-5">
-                        <h5 class="text-info">Tautan Penting</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><a class="text-light" href="{{route("beranda.index")}}">Beranda</a></li>
-                            <li class="mb-2"><a class="text-light" href="{{route("tentang")}}">Tentang</a></li>
-                            <li class="mb-2"><a class="text-light" href="{{route("dokter")}}">Dokter</a></li>
-                            <li class="mb-2"><a class="text-light" href="{{route("poliklinik")}}">Poliklinik</a></li>
-                        </ul>
-                    </div>
-                    <div class="tekstentang col-4 col-lg-3 offset-lg mb-5 ms-0 me-3">
-                        <h5 class="text-info">Kontak Kami</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <a href="https://github.com/"><i class="bi bi-github me-3 text-light" style="size"></i></a>
-                                <a href="https://www.instagram.com/"><i class="bi bi-instagram me-3 text-light"></i></a>
-                                <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp me-3 text-light"></i></a>
-                                <a href="https://www.telkomsel.com/"><i class="bi bi-telephone me-3 text-light"></i></a>
-                                <a href="https://mail.google.com/"><i class="bi bi-envelope me-3 text-light"></i></a>
-                            </li>
-                        </ul>
-                        <p>Jl. Ketintang No.156, Gayungan, Surabaya, Jawa Timur 60231</p>
-                    </div>
-                    <div class="tekstentang col-4 col-lg-3 offset-lg-1 mb-5 ms-4">
-                        <h5 class="text-info">Jam Operasional</h5>
-                        <ul class="list-unstyled">
-                            <li>1. Senin - Kamis (08.00 - 16.00)</li>
-                            <li>2. Jumat (08.00 - 14.00)</li>
-                            <li>3. Sabtu, Minggu, Hari Besar (Libur)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('layouts.footer')
     @vite('resources/js/app.js')
 </body>
 </html>
