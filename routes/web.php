@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('home');
+    return view('beranda');
 });
 Route::get('/poliklinik', function () {
     return view('poliklinik');
@@ -33,7 +33,7 @@ Route::get('/form', function () {
     return view('formulir');
 });
 Route::get('/home', function () {
-    return view('home');
+    return view('beranda');
 });
 
 Route::get('/dokter', function () {
