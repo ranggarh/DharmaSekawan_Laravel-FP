@@ -10,6 +10,10 @@ use App\Http\Controllers\TentangController;
 use App\Http\Controllers\PoliklinikController;
 use App\Http\Controllers\DoktorController;
 use App\Http\Controllers\KontakController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardLaporanController;
+use App\Http\Controllers\FrontAntrianController;
+use App\Http\Controllers\DashboardAntrianController;
 
 
 
@@ -27,7 +31,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('beranda');
 });
 
 Route::resource('admin', AdminController::class);
@@ -50,6 +54,20 @@ Route::get('/dokterkami', DoktorController::class)->name('dokter');
 Route::get('/kontak', KontakController::class)->name('kontak');
 
 Route::resource('data_pasien', AdminController::class);
+
+
+// antrian
+Route::resource('antrian', FrontAntrianController::class);
+Route::get('livewire/antrian/cetakAntrian', [FrontAntrianController::class, 'cetakAntrian'])->name('cetakAntrian');
+
+Route::get('dashboard', [DashboardController::class, 'index']);
+
+Route::get('dashboard/antrian/poliUmum', [DashboardAntrianController::class, 'indexPoliUmum']);
+Route::get('dashboard/antrian/poliGigi', [DashboardAntrianController::class, 'indexPoliGigi']);
+Route::get('dashboard/antrian/poliTht', [DashboardAntrianController::class, 'indexPoliTht']);
+
+Route::get('dashboard/laporan/index', [DashboardLaporanController::class, 'index']);
+Route::get('livewire/dashboard/laporan/cetakLaporan', [DashboardLaporanController::class, 'cetakLaporan'])->name('cetakLaporan');
 
 
 // Route::resource('/pendaftaran', BerandaController::class, 'create');

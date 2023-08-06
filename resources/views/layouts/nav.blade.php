@@ -23,6 +23,9 @@
                     <a class="nav-link active" aria-current="page" href="{{route('kontak')}}">Kontak</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link active" href="">Antrian</a>
+                </li>
+                <li class="nav-item">
                     <button class="btn btn-primary me-3 ms-2" type="button" href="#"><a class="text-white" href="{{route('beranda.create')}}">Pendaftaran</a></button>
                 </li>
             </ul>
