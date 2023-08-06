@@ -31,20 +31,20 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-Route::resource('antrian', FrontAntrianController::class);
-Route::get('livewire/antrian/cetakAntrian', [FrontAntrianController::class, 'cetakAntrian'])->name('cetakAntrian');
+Route::resource('antrian', FrontAntrianController::class)->middleware('auth');
+Route::get('livewire/antrian/cetakAntrian', [FrontAntrianController::class, 'cetakAntrian'])->name('cetakAntrian')->middleware('auth');
 
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('dashboard', [DashboardController::class, 'index']);
+Route::get('dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
-Route::get('dashboard/antrian/poliUmum', [DashboardAntrianController::class, 'indexPoliUmum']);
-Route::get('dashboard/antrian/poliGigi', [DashboardAntrianController::class, 'indexPoliGigi']);
-Route::get('dashboard/antrian/poliTht', [DashboardAntrianController::class, 'indexPoliTht']);
+Route::get('dashboard/antrian/poliUmum', [DashboardAntrianController::class, 'indexPoliUmum'])->middleware('auth');
+Route::get('dashboard/antrian/poliGigi', [DashboardAntrianController::class, 'indexPoliGigi'])->middleware('auth');
+Route::get('dashboard/antrian/poliTht', [DashboardAntrianController::class, 'indexPoliTht'])->middleware('auth');
 
-Route::get('dashboard/laporan/index', [DashboardLaporanController::class, 'index']);
-Route::get('livewire/dashboard/laporan/cetakLaporan', [DashboardLaporanController::class, 'cetakLaporan'])->name('cetakLaporan');
+Route::get('dashboard/laporan/index', [DashboardLaporanController::class, 'index'])->middleware('auth');
+Route::get('livewire/dashboard/laporan/cetakLaporan', [DashboardLaporanController::class, 'cetakLaporan'])->name('cetakLaporan')->middleware('auth');
 
 //view
 Route::resource('admin', AdminController::class);

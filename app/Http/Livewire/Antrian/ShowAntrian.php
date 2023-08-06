@@ -168,6 +168,8 @@ class ShowAntrian extends Component
         $this->dispatchBrowserEvent('closeModal');
     }
 
+
+    //form show
     public function showDetail($antrian_id)
     {
         $antrian = Antrian::find($antrian_id);

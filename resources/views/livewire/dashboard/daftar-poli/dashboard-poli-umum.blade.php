@@ -4,13 +4,13 @@
         <div class="card mt-3" style="height: 550px">
             <div class="card-body">
                 <div class="card-title">Daftar Antrian Poli Umum</div>
-    
+
                 @if(session()->has('success'))
                     <div class="alert alert-success alert-dismissible fade show" role="alert"> {{ session('success') }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
-    
+
                 <div class="row">
                     <div class="col">
                         <div class="table-responsive">

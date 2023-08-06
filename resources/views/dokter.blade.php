@@ -21,8 +21,8 @@
     <div class="tekstentang" style="background-color: rgb(115, 169, 220)">
         <div class="dokter">
             <div class="container-fluid">
-                <div class="row mx-auto" style="width: 60rem;">
-                    <div class="card-deck mx-auto mt-5">
+                <div class="row">
+                    <div class="card-deck mx-auto mt-5" style="width: 60rem;">
                         <div class="card">
                             <img src="/images/dokter1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">

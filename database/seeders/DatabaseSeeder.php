@@ -24,9 +24,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
-            DokterSeeder::class,
-            // SpesialisSeeder::class,
-            SpecialistSeeder::class
+            UserSeeder::class
         ]);
 
         Antrian::create([
@@ -41,25 +39,5 @@ class DatabaseSeeder extends Seeder
             'poli'       => 1
         ]);
 
-        User::create([
-            'name'      => 'Dwi Purnomo',
-            'email'     => 'purnomodwi174@gmail.com',
-            'password'  => bcrypt('1234'),
-            'roles'      => 1
-        ]);
-
-        User::create([
-            'name'      => 'Admin',
-            'email'     => 'admin@gmail.com',
-            'password'  => bcrypt('1234'),
-            'roles'      => 2
-        ]);
-
-        User::create([
-            'name'      => 'Galang Adi Trianto',
-            'email'     => 'wartabolanet@gmail.com',
-            'password'  => bcrypt('1234'),
-            'roles'      => 1
-        ]);
     }
 }
