@@ -95,7 +95,7 @@ class FrontAntrianController extends Controller
         $user = Auth::user();
         $detailAntrian = Antrian::where('user_id',$user->id)->get();
 
-        $pdf = PDF::loadview('fiturUtama.livewire.antrian.cetakAntrian',[
+        $pdf = PDF::loadview('livewire.antrian.cetakAntrian',[
             'detailAntrian' => $detailAntrian
         ]);
         return $pdf->stream('antrian.pdf');
